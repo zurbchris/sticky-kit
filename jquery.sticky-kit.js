@@ -34,9 +34,8 @@
       enable_bottoming = true;
     }
     outer_width = function(el) {
-      var _el, computed, w;
+      var computed, w;
       if (window.getComputedStyle) {
-        _el = el[0];
         computed = window.getComputedStyle(el[0]);
         w = parseFloat(computed.getPropertyValue("width")) + parseFloat(computed.getPropertyValue("margin-left")) + parseFloat(computed.getPropertyValue("margin-right"));
         if (computed.getPropertyValue("box-sizing") !== "border-box") {
