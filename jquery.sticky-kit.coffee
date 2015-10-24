@@ -28,7 +28,6 @@ $.fn.stick_in_parent = (opts={}) ->
   # we need this because jquery's version (along with css()) rounds everything
   outer_width = (el) ->
     if window.getComputedStyle
-      _el = el[0]
       computed = window.getComputedStyle el[0]
 
       w = parseFloat(computed.getPropertyValue("width")) + parseFloat(computed.getPropertyValue("margin-left")) + parseFloat(computed.getPropertyValue("margin-right"))
